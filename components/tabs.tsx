@@ -123,7 +123,7 @@ export default function Tabs() {
               {/* Videos */}
               <div className="flex items-center justify-center">
                 <ModalVideoIphone
-                  imgSrc={IMAGE_MAP[category as keyof typeof IMAGE_MAP]}
+                  imgSrc={IMAGE_MAP[category as keyof typeof IMAGE_MAP] as any}
                   thumb={VideoThumb}
                   thumbWidth={290}
                   thumbHeight={624}
