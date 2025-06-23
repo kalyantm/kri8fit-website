@@ -17,6 +17,7 @@ interface ModalVideoIphoneProps {
   videoWidth: number
   videoHeight: number
   showPlayButton?: boolean
+  imgSrc?: StaticImageData
 }
 
 export default function ModalVideoIphone({
@@ -28,6 +29,7 @@ export default function ModalVideoIphone({
   videoWidth,
   videoHeight,
   showPlayButton = false,
+  imgSrc = Trends,
 }: ModalVideoIphoneProps) {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -88,7 +90,7 @@ export default function ModalVideoIphone({
         {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
         <Image
           className="absolute"
-          src={Trends}
+          src={imgSrc}
           width={thumbWidth}
           height={thumbHeight}
           alt={thumbAlt}
@@ -98,7 +100,7 @@ export default function ModalVideoIphone({
         {/* iPhone mockup */}
         <Image
           className="relative max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none"
-          src={IphoneMockup}
+          src={imgSrc}
           width={344}
           height={674}
           priority

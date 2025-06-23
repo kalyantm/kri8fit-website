@@ -11,6 +11,13 @@ export default function Tabs() {
     "3": "/videos/trends.mp4",
     "4": "/videos/exercise-trends.mp4",
   }
+  const IMAGE_MAP = {
+    "1": "/images/save-exercises-image.png",
+    "2": "/images/save-workout-image.png",
+    "3": "/images/view-muscle-group-trends-image.png",
+    "4": "/images/view-exercise-trends-image.png",
+  }
+
   return (
     <section className="relative border-t border-transparent dark:border-gray-800">
       {/* Background gradient */}
@@ -116,6 +123,7 @@ export default function Tabs() {
               {/* Videos */}
               <div className="flex items-center justify-center">
                 <ModalVideoIphone
+                  imgSrc={IMAGE_MAP[category as keyof typeof IMAGE_MAP]}
                   thumb={VideoThumb}
                   thumbWidth={290}
                   thumbHeight={624}

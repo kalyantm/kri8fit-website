@@ -1,6 +1,7 @@
 export const metadata = {
-  title: "Home - Appy",
-  description: "Page description",
+  title: "kri8.fit",
+  description:
+    "An AI powered fitness app that tracks your workouts and measures your progress.",
 }
 
 import PageIllustration from "@/components/page-illustration"

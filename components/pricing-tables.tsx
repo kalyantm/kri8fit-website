@@ -46,12 +46,13 @@ export default function PricingTables() {
                 </div>
                 <div className="text-gray-500 dark:text-gray-400">
                   - Create workouts <br />- Save exercises <br />- View trends
-                  by muscle group <br />- View trends by exercise
+                  from the last 4 weeks by muscle group <br />- Per exercise
+                  trends for last 4 sessions
                 </div>
               </div>
               <div className="mt-24">
                 <a
-                  className="btn-sm text-white bg-teal-500 hover:bg-teal-400 w-full"
+                  className="btn-sm text-white bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] w-full"
                   href="#0"
                 >
                   Get started
@@ -70,20 +71,31 @@ export default function PricingTables() {
                     Pro
                   </div>
                 </div>
-                <div className="font-red-hat-display inline-flex items-baseline mb-2">
+                <div className="line-through font-red-hat-display inline-flex items-baseline mb-2">
                   <span className="h4 text-gray-600 dark:text-gray-400">$</span>
-                  <span className="h3">47</span>
+                  <span className="h3">29.99</span>
                   <span className="font-medium text-gray-500 dark:text-gray-400">
                     /billed yearly
                   </span>
                 </div>
-                <div className="text-gray-500 dark:text-gray-400">
-                  — Lorem ipsum dolor amet sit consect adipiscing.
+                <div className="font-red-hat-display items-baseline mb-2">
+                  <span className="h4">$0 for now!</span>
+                  {/* <span className="font-medium text-gray-500 dark:text-gray-400">
+                    /billed yearly
+                  </span> */}
+                </div>
+                <div>🟢 Free during MVP launch</div>
+                <div>
+                  🎉 Early users get lifetime 50% off when pricing goes live
+                </div>
+                <div className="mt-2 text-gray-500 dark:text-gray-400">
+                  - Everything in Starter <br />- Unlimited access to fit.ly{" "}
+                  <br />- Weekly summaries <br />- Unlimited trend history
                 </div>
               </div>
               <div className="mt-24">
                 <a
-                  className="btn-sm text-white bg-purple-500 hover:bg-purple-400 dark:text-teal-400 dark:bg-gray-700 dark:hover:bg-gray-600 w-full"
+                  className="btn-sm text-white bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] w-full"
                   href="#0"
                 >
                   Get started
