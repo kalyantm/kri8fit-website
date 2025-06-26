@@ -57,7 +57,7 @@ export default function Tabs() {
                   <span
                     className={
                       category === "1"
-                        ? "text-gray-600 dark:text-teal-400"
+                        ? "text-gray-600 dark:text-black"
                         : "text-gray-600 dark:text-gray-300"
                     }
                   >
@@ -67,7 +67,7 @@ export default function Tabs() {
                 <button
                   className={`font-medium px-4 py-3 shadow-sm transition duration-150 ease-in-out rounded-2xl flex items-center justify-center w-48 ${
                     category === "2"
-                      ? "bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193]"
+                      ? "bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] dark:text-white"
                       : "bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700"
                   }`}
                   onClick={() => setCategory("2")}
@@ -75,7 +75,7 @@ export default function Tabs() {
                   <span
                     className={
                       category === "2"
-                        ? "text-gray-600 dark:text-teal-400"
+                        ? "text-gray-600 dark:text-black"
                         : "text-gray-600 dark:text-gray-300"
                     }
                   >
@@ -85,7 +85,7 @@ export default function Tabs() {
                 <button
                   className={`font-medium px-4 py-3 shadow-sm transition duration-150 ease-in-out rounded-2xl flex items-center justify-center w-48 ${
                     category === "3"
-                      ? "bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193]"
+                      ? "bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] dark:text-white"
                       : "bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700"
                   }`}
                   onClick={() => setCategory("3")}
@@ -93,7 +93,7 @@ export default function Tabs() {
                   <span
                     className={
                       category === "3"
-                        ? "text-gray-600 dark:text-teal-400"
+                        ? "text-gray-600 dark:text-black"
                         : "text-gray-600 dark:text-gray-300"
                     }
                   >
@@ -103,7 +103,7 @@ export default function Tabs() {
                 <button
                   className={`font-medium px-4 py-3 shadow-sm transition duration-150 ease-in-out rounded-2xl flex items-center justify-center w-48 ${
                     category === "4"
-                      ? "bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193]"
+                      ? "bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] dark:text-white"
                       : "bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700"
                   }`}
                   onClick={() => setCategory("4")}
@@ -111,8 +111,8 @@ export default function Tabs() {
                   <span
                     className={
                       category === "4"
-                        ? "text-gray-600 dark:text-teal-400"
-                        : "text-gray-600 dark:text-gray-300"
+                        ? "text-gray-600 dark:text-black"
+                        : "text-gray-600 dark:text-white"
                     }
                   >
                     Exercise trends

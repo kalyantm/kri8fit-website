@@ -89,7 +89,7 @@ export default function Process() {
                 <div className="absolute inset-0 border-t border-dashed border-white dark:border-gray-900"></div>
               </div>
               {/* Number */}
-              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black dark:text-teal-400 font-medium mb-8 lg:mb-12">
+              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black font-medium mb-8 lg:mb-12">
                 1
               </div>
               {/* Mobile mockup */}
@@ -130,7 +130,7 @@ export default function Process() {
                 <div className="absolute inset-0 border-t border-dashed border-white dark:border-gray-900"></div>
               </div>
               {/* Number */}
-              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black dark:text-teal-400 font-medium mb-8 lg:mb-12">
+              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black font-medium mb-8 lg:mb-12">
                 2
               </div>
               {/* Mobile mockup */}
@@ -158,7 +158,7 @@ export default function Process() {
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black dark:text-teal-400 font-medium mb-8 lg:mb-12">
+              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black font-medium mb-8 lg:mb-12">
                 3
               </div>
               {/* Mobile mockup */}

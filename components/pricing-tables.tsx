@@ -25,7 +25,7 @@ export default function PricingTables() {
           <div className="max-w-xs mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-2 items-start sm:max-w-none md:max-w-2xl lg:max-w-none">
             {/* Pricing table 1 */}
             <div
-              className="flex flex-col h-full p-6 bg-white dark:bg-gray-800 shadow-sm border-2 border-transparent dark:border-teal-500"
+              className="flex flex-col h-full p-6 bg-white dark:bg-gray-800 shadow-sm border-2 border-transparent "
               data-aos="fade-down"
             >
               <div className="grow mb-4 pb-4">
@@ -52,7 +52,7 @@ export default function PricingTables() {
               </div>
               <div className="mt-24">
                 <a
-                  className="btn-sm text-white bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] w-full"
+                  className="btn-sm text-white dark:text-black bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] w-full"
                   href="#0"
                 >
                   Get started
@@ -95,7 +95,7 @@ export default function PricingTables() {
               </div>
               <div className="mt-24">
                 <a
-                  className="btn-sm text-white bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] w-full"
+                  className="btn-sm text-white dark:text-black bg-[#85f193] hover:bg-[#85f193] dark:bg-[#85f193] dark:hover:bg-[#85f193] w-full"
                   href="#0"
                 >
                   Get started

@@ -1,5 +1,6 @@
 import VideoThumb from "@/public/images/mockup-image-01.jpg"
 import ModalVideoIphone from "@/components/modal-video-iphone"
+import Trends from "@/public/images/view-muscle-group-trends-image.png"
 
 export default function HeroHome() {
   return (
@@ -46,7 +47,7 @@ export default function HeroHome() {
                 </li>
                 <li className="flex items-center mb-2">
                   <svg
-                    className="w-3 h-3 fill-current text-teal-400 mr-2 shrink-0"
+                    className="w-3 h-3 fill-current text-[#85f193] dark:text-[#85f193] mr-2 shrink-0"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -59,7 +60,7 @@ export default function HeroHome() {
                 </li>
                 <li className="flex items-center mb-2">
                   <svg
-                    className="w-3 h-3 fill-current text-teal-400 mr-2 shrink-0"
+                    className="w-3 h-3 fill-current text-[#85f193] dark:text-[#85f193] mr-2 shrink-0"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -80,6 +81,7 @@ export default function HeroHome() {
               data-aos-delay="450"
             >
               <ModalVideoIphone
+                imgSrc={Trends}
                 thumb={VideoThumb}
                 thumbWidth={290}
                 thumbHeight={624}
