@@ -275,7 +275,7 @@ export default function Footer() {
             </ul>
 
             {/* Middle links */}
-            {/* <div className="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
+            <div className="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
               <a
                 className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
                 href="#0"
@@ -283,13 +283,13 @@ export default function Footer() {
                 Terms
               </a>{" "}
               ·{" "}
-              <a
+              <Link
                 className="text-gray-600 dark:text-gray-400 hover:underline transition duration-150 ease-in-out"
-                href="#0"
+                href="/privacy"
               >
                 Privacy Policy
-              </a>
-            </div> */}
+              </Link>
+            </div>
 
             {/* Copyrights note */}
             <div className="text-gray-600 dark:text-gray-400 text-sm mr-4">
