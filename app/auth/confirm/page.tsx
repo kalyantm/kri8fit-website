@@ -1,6 +1,7 @@
 'use client'
 
 import PageIllustration from '@/components/page-illustration'
+import { supabase } from '@/supabase';
 import { useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useState } from 'react'
 
@@ -10,14 +11,28 @@ function ConfirmScreen() {
 
   const searchParams = useSearchParams();
   const token_hash = searchParams.get('token_hash');
+  const type = searchParams.get('type');
 
   useEffect(() => {
-    if (!token_hash) {
+    const confirm = async () => {
+    if (!token_hash || !type) {
       setConfirmationText('Email verification failed. Please reach out to support@kri8.fit.');
-    } else {
-      setConfirmationText('Your email has been confirmed successfully!');
+    } 
+    if (token_hash && type) {
+      const { error } = await supabase.auth.verifyOtp({
+        type: type as any,
+        token_hash,
+      });
+       if (!error) {
+        setConfirmationText('Your email has been confirmed successfully!');
+        } else {
+        setConfirmationText('Email verification failed. Please reach out to support@kri8.fit.');
+        }
+      }
     }
-    setLoading(false)
+    confirm().finally(() => {
+      setLoading(false)
+    })
   }, [token_hash]);
 
   return (
