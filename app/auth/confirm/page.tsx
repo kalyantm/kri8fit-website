@@ -5,7 +5,7 @@ import { supabase } from '@/supabase';
 import { useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useState } from 'react'
 
-export default function Confirm() {
+function ConfirmScreen() {
   const [confirmationText, setConfirmationText] = useState('')
   const [loading, setLoading] = useState(true);
 
@@ -29,7 +29,7 @@ export default function Confirm() {
   }, [token_hash]);
 
   return (
-    <Suspense>
+    <>
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
         <PageIllustration />
       </div>
@@ -54,6 +54,14 @@ export default function Confirm() {
           </div>
         </div>
       </section>
+    </>
+  )
+}
+
+export default function Confirm() {
+  return (
+    <Suspense>
+      <ConfirmScreen />
     </Suspense>
   )
 }
