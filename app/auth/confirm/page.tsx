@@ -3,7 +3,7 @@
 import PageIllustration from '@/components/page-illustration'
 import { supabase } from '@/supabase';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 
 export default function Confirm() {
   const [confirmationText, setConfirmationText] = useState('')
@@ -29,7 +29,7 @@ export default function Confirm() {
   }, [token_hash]);
 
   return (
-    <>
+    <Suspense>
       <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
         <PageIllustration />
       </div>
@@ -54,6 +54,6 @@ export default function Confirm() {
           </div>
         </div>
       </section>
-    </>
+    </Suspense>
   )
 }
