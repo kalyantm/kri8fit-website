@@ -1,4 +1,9 @@
+import tzCitiesToCountries from "./utils/tz-cities-to-countries.json"
+
 export default function PricingTables() {
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone
+  // tzCitiesToCountries[Intl.DateTimeFormat().resolvedOptions().timeZone]
+  // console.log("cu", tz, tzCitiesToCountries[tz])
   return (
     <section className="relative bg-gray-900 border-t border-transparent dark:border-gray-800">
       {/* Background gradient (dark version only) */}
@@ -45,9 +50,10 @@ export default function PricingTables() {
                   </span> */}
                 </div>
                 <div className="text-gray-500 dark:text-gray-400">
-                  - Create workouts <br />- Save exercises <br />- View trends
-                  from the last 4 weeks by muscle group <br />- Per exercise
-                  trends for last 4 sessions
+                  - Create unlimited workouts <br />- Save unlimited exercises{" "}
+                  <br />- Limited access to Aviva
+                  <br />- View trends from the last 4 weeks by muscle group{" "}
+                  <br />- Per exercise trends for last 4 sessions
                 </div>
               </div>
               <div className="mt-24">
@@ -66,31 +72,25 @@ export default function PricingTables() {
               data-aos-delay="150"
             >
               <div className="grow mb-4 pb-4">
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex flex-col gap-2 mb-1">
                   <div className="text-xl font-bold font-red-hat-display">
                     Pro
                   </div>
+                  <div className="text-md font-bold font-red-hat-display">
+                    14 day free trial, then:
+                  </div>
                 </div>
-                <div className="line-through font-red-hat-display inline-flex items-baseline mb-2">
+                <div className="font-red-hat-display inline-flex items-baseline mb-2">
                   <span className="h4 text-gray-600 dark:text-gray-400">$</span>
-                  <span className="h3">29.99</span>
+                  <span className="h3">79.99</span>
                   <span className="font-medium text-gray-500 dark:text-gray-400">
-                    /billed yearly
+                    /year
                   </span>
                 </div>
-                <div className="font-red-hat-display items-baseline mb-2">
-                  <span className="h4">$0 for now!</span>
-                  {/* <span className="font-medium text-gray-500 dark:text-gray-400">
-                    /billed yearly
-                  </span> */}
-                </div>
-                <div>🟢 Free during MVP launch</div>
-                <div>
-                  🎉 Early users get lifetime 50% off when pricing goes live
-                </div>
                 <div className="mt-2 text-gray-500 dark:text-gray-400">
-                  - Everything in Starter <br />- Unlimited access to fit.ly{" "}
-                  <br />- Weekly summaries <br />- Unlimited trend history
+                  - Everything in Starter <br />- Unlimited access to Aviva +
+                  exclusive tips & tricks <br />- Weekly / Monthly reports{" "}
+                  <br />- Unlimited trend history
                 </div>
               </div>
               <div className="mt-24">

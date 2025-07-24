@@ -22,10 +22,9 @@ export default function HeroHome() {
                 data-aos="fade-down"
                 data-aos-delay="150"
               >
-                Kri8.fit helps you train hard and track every rep. With your
-                AI-powered coach by your side, you can stop guessing — and start
-                getting stronger.
-                {/* so you can focus on what really matters: getting stronger. */}
+                kri8.fit helps you train hard and track every rep. With Aviva,
+                your AI-powered fitness twin by your side, you can stop guessing
+                and start getting stronger!
               </p>
               <ul
                 className="max-w-sm sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2"
@@ -34,7 +33,7 @@ export default function HeroHome() {
               >
                 <li className="flex items-center mb-2">
                   <svg
-                    className="w-3 h-3 fill-current text-teal-400 mr-2 shrink-0"
+                    className="w-3 h-3 fill-current text-[#85f193] -400 mr-2 shrink-0"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -67,8 +66,8 @@ export default function HeroHome() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>
-                    Chat with Fit.ly, your AI coach — ask about your progress,
-                    your routine, or what to train next.
+                    Chat with Aviva, your AI fitness twin — ask about your
+                    progress, your routine, or what to train next.
                   </span>
                 </li>
               </ul>
@@ -76,7 +75,7 @@ export default function HeroHome() {
 
             {/* Mobile mockup */}
             <div
-              className="md:col-span-5 lg:col-span-5 text-center md:text-right"
+              className="md:col-span-5 lg:col-span-5 text-center md:text-right rotate-[10deg]"
               data-aos="fade-up"
               data-aos-delay="450"
             >

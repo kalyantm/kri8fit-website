@@ -1,8 +1,9 @@
 import Image from "next/image"
-import MockupImage02 from "@/public/images/fit.ly-1.png"
-import MockupImage03 from "@/public/images/fit.ly-2.png"
-import MockupImage04 from "@/public/images/fit.ly-3.png"
+import MockupImage02 from "@/public/images/aviva-1.png"
+import MockupImage03 from "@/public/images/aviva-2.png"
+import MockupImage04 from "@/public/images/aviva-3.png"
 import IphoneMockup from "@/public/images/iphone-mockup.png"
+import ModalVideoIphone from "./modal-video-iphone"
 
 export default function Process() {
   return (
@@ -12,11 +13,11 @@ export default function Process() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-red-hat-display mb-4">
-              Meet fit.ly, your AI powered workout companion
+              Meet Aviva, your AI fitness twin
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Built Like ChatGPT. Trained for Your Gains. Ask anything, from
-              progress insights to what you should train next. fit.ly uses your
+              Built like ChatGPT. Trained for your gains. Ask anything, from
+              progress insights to what you should train next. Aviva uses your
               data to give you clear, personalized answers.
             </p>
           </div>
@@ -79,7 +80,7 @@ export default function Process() {
               {/* Line connecting (1) and (2) */}
               <div
                 aria-hidden="true"
-                className="absolute h-px opacity-50 bg-linear-to-r from-white via-[#85f193] to-white dark:from-gray-900 dark:via-[#85f193] dark:to-gray-900 hidden md:block"
+                className="absolute h-px opacity-50 bg-linear-to-r from-white via-[#5E5EE7] to-white dark:from-gray-900 dark:via-[#5E5EE7] dark:to-gray-900 hidden md:block"
                 style={{
                   width: "calc(100% - 48px)",
                   left: "calc(50% + 48px)",
@@ -89,28 +90,24 @@ export default function Process() {
                 <div className="absolute inset-0 border-t border-dashed border-white dark:border-gray-900"></div>
               </div>
               {/* Number */}
-              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black font-medium mb-8 lg:mb-12">
+              <div className="w-12 h-12 rounded-full bg-[#5E5EE7] dark:bg-[#5E5EE7] flex justify-center items-center text-white font-medium mb-8 lg:mb-12">
                 1
               </div>
               {/* Mobile mockup */}
-              <div className="inline-flex relative justify-center items-center">
-                {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage02}
-                  width={290}
-                  height="624"
-                  style={{ maxWidth: "84.33%" }}
-                  alt="App screen 02"
-                />
-                {/* iPhone mockup */}
-                <Image
-                  className="relative max-w-full mx-auto h-auto pointer-events-none"
-                  src={IphoneMockup}
-                  width={344}
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
+              <div
+                className="md:col-span-5 lg:col-span-5 text-center md:text-right"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <ModalVideoIphone
+                  thumb={MockupImage02}
+                  imgSrc={MockupImage02}
+                  thumbWidth={290}
+                  thumbHeight={624}
+                  thumbAlt="Modal video thumbnail"
+                  video="/videos/video.mp4"
+                  videoWidth={1920}
+                  videoHeight={1080}
                 />
               </div>
             </div>
@@ -120,7 +117,7 @@ export default function Process() {
               {/* Line connecting (2) and (3) */}
               <div
                 aria-hidden="true"
-                className="absolute h-px opacity-50 bg-linear-to-r from-white via-[#85f193] to-white dark:from-gray-900 dark:via-[#85f193] dark:to-gray-900 hidden md:block"
+                className="absolute h-px opacity-50 bg-linear-to-r from-white via-[#5E5EE7] to-white dark:from-gray-900 dark:via-[#5E5EE7] dark:to-gray-900 hidden md:block"
                 style={{
                   width: "calc(100% - 48px)",
                   left: "calc(50% + 48px)",
@@ -130,56 +127,47 @@ export default function Process() {
                 <div className="absolute inset-0 border-t border-dashed border-white dark:border-gray-900"></div>
               </div>
               {/* Number */}
-              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black font-medium mb-8 lg:mb-12">
+              <div className="w-12 h-12 rounded-full bg-[#5E5EE7] dark:bg-[#5E5EE7] flex justify-center items-center text-white font-medium mb-8 lg:mb-12">
                 2
               </div>
               {/* Mobile mockup */}
-              <div className="inline-flex relative justify-center items-center">
-                {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage03}
-                  width={290}
-                  height="624"
-                  style={{ maxWidth: "84.33%" }}
-                  alt="App screen 03"
-                />
-                {/* iPhone mockup */}
-                <Image
-                  className="relative max-w-full mx-auto h-auto pointer-events-none"
-                  src={IphoneMockup}
-                  width={344}
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
+              <div
+                className="md:col-span-5 lg:col-span-5 text-center md:text-right"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <ModalVideoIphone
+                  thumb={MockupImage03}
+                  imgSrc={MockupImage03}
+                  thumbWidth={290}
+                  thumbHeight={624}
+                  thumbAlt="Modal video thumbnail"
+                  video="/videos/video.mp4"
+                  videoWidth={1920}
+                  videoHeight={1080}
                 />
               </div>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full bg-[#85f193] dark:bg-[#85f193] flex justify-center items-center text-black font-medium mb-8 lg:mb-12">
+              <div className="w-12 h-12 rounded-full bg-[#5E5EE7] dark:bg-[#5E5EE7] flex justify-center items-center text-white font-medium mb-8 lg:mb-12">
                 3
               </div>
-              {/* Mobile mockup */}
-              <div className="inline-flex relative justify-center items-center">
-                {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image
-                  className="absolute"
-                  src={MockupImage04}
-                  width={290}
-                  height="624"
-                  style={{ maxWidth: "84.33%" }}
-                  alt="App screen 04"
-                />
-                {/* iPhone mockup */}
-                <Image
-                  className="relative max-w-full mx-auto h-auto pointer-events-none"
-                  src={IphoneMockup}
-                  width={344}
-                  height="674"
-                  alt="iPhone mockup"
-                  aria-hidden="true"
+              <div
+                className="md:col-span-5 lg:col-span-5 text-center md:text-right"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <ModalVideoIphone
+                  thumb={MockupImage04}
+                  imgSrc={MockupImage04}
+                  thumbWidth={290}
+                  thumbHeight={624}
+                  thumbAlt="Modal video thumbnail"
+                  video="/videos/video.mp4"
+                  videoWidth={1920}
+                  videoHeight={1080}
                 />
               </div>
             </div>
